@@ -1,6 +1,6 @@
-import 'package:breaking_bapp/model/character_summary.dart';
-import 'package:breaking_bapp/widget/character_list_item.dart';
-import 'package:breaking_bapp/api/character_api.dart';
+import 'package:indus_task/model/character_summary.dart';
+import 'package:indus_task/widget/character_list_item.dart';
+import 'package:indus_task/api/character_api.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:infinite_scroll_pagination/infinite_scroll_pagination.dart';
@@ -35,7 +35,7 @@ class _CharacterListViewState extends State<CharacterListView> {
         final nextPageKey = pageKey + newItems.length;
         _pagingController.appendPage(newItems, nextPageKey);
       }
-    } catch(error) {
+    } catch (error) {
       _pagingController.error = error;
     }
   }

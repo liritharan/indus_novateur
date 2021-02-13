@@ -1,4 +1,4 @@
-import 'package:breaking_bapp/model/character_summary.dart';
+import 'package:indus_task/model/character_summary.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
